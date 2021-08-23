@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sliders
+    </title>
+    <meta charset="utf-8">
+    <link href="{{url_for('css', path='style.css')}}" rel="stylesheet">
+    <script src="http://127.0.0.1:8000/js/scripts.js"></script>
+<body>
+    <div class="slider">
+        Коэфицент хирша 
+        <input class="ran" id="hirsh" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#hvol')">
+        <output for="hirsh" id="hvol">1</output>
+    </div>
+
+    <div class="slider">
+        Статей за год
+        <input class="ran" id="yearArticle" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#yvol')">
+        <output for="hirsh" id="yvol">1</output>
+    </div>
+
+    <div class="slider">
+        Колличество соавторов
+        <input class="ran" id="numCoauthors" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#cvol')">
+        <output for="hirsh" id="cvol">1</output>
+    </div>
+
+    <div class="slider">
+        Число аффликаций
+        <input class="ran" id="numAffiliations" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#avol')">
+        <output for="hirsh" id="avol">1</output>
+    </div>
+
+    <div class="slider">
+        Колличество ключеввых слов
+        <input class="ran" id="keyWords" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#kvol')">
+        <output for="hirsh" id="kvol">1</output>
+    </div>
+
+    <div class="slider">
+        SNA
+        <input class="ran" id="SNA" type="range" min=-5 max=5 step="1", value="1" onchange="updateSlider(value, '#svol')">
+        <output for="hirsh" id="svol">1</output>
+    </div>
+
+    <div class="authors" id="authors">
+
+    </div>
+    <div class="send">
+        <button onclick="send()">Отправить результаты расчёта</button>
+    </div>
+</body>
+</head>

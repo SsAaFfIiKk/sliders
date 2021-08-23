@@ -1,0 +1,43 @@
+
+body {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+td {
+    padding: 5px;
+}
+   
+.slider {
+    padding: 30px;
+    position: relative;
+    border-radius: 8px;
+    width: 610px;
+    height: 18px;
+}
+
+.ran { 
+    position: relative;
+    left: 3px;
+    width: 600px;
+    height: 10px;
+    background: #76de76;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.ran::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #76de76;
+    box-shadow: 0 0 2px #222;
+}
+
+.authors {
+    padding: 20px 20px;
+}
